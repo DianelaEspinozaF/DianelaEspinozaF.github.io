@@ -1,5 +1,3 @@
-# DianelaEspinozaF.github.io
-
 # Dianela Espinoza
 
 Welcome to my personal website!
