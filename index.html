@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dianela Espinoza - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .experience-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .experience-item h3 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .experience-item h4 {
+            color: #666;
+            font-weight: normal;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #764ba2;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-links a {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .contact-links a:hover {
+            background: #764ba2;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .skills {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Dianela Espinoza</h1>
+        <p>Master's Candidate in Data Science and Public Policy | LSE</p>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi all! I am Dianela, from Chiclayo, Peru. I am a Master's candidate in Data Science and Public Policy at
+                the London School of Economics (LSE). I have a strong interest in topics related to education,
+                early-childhood development, and impact evaluation.</p>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+
+            <div class="experience-item">
+                <h3>Research Assistant</h3>
+                <h4>GRADE - Young Lives Peru Team</h4>
+                <p>I worked with Santiago Cueto and Alan Sanchez on the international longitudinal study Young Lives,
+                    focusing on:</p>
+                <ul>
+                    <li>Conditional cash transfer interventions and their impact on educational outcomes</li>
+                    <li>Human capital formation indicators</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Research Intern</h3>
+                <h4>Innovations for Poverty Action</h4>
+                <p>I contributed to projects including:</p>
+                <ul>
+                    <li>Closing gender gaps in STEM careers in Belize</li>
+                    <li>Intercultural Bilingual Education interventions during kindergarten</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill-item">Data cleaning and preparation with high standards</div>
+                <div class="skill-item">Data Science and Statistical Analysis</div>
+                <div class="skill-item">Impact Evaluation and Research Methods</div>
+                <div class="skill-item">Leadership</div>
+                <div class="skill-item">Teamwork and Collaboration</div>
+            </div>
+        </section>
+
+        <section id="motivation">
+            <h2>My Motivation</h2>
+            <p>I am passionate about continuing work in education because quality education changed my life. I have the
+                conviction that access to quality education should be a right, not a privilege.</p>
+            <p>I am motivated to continue learning and sharing experiences where I can flourish alongside other
+                brilliant and outstanding professionals.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-links">
+                <a href="https://github.com/DianelaEspinozaF" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/dianelaespinoza/" target="_blank">LinkedIn</a>
+                <a href="mailto:d.j.espinoza-fernandez@lse.ac.uk">Email</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Dianela Espinoza. All rights reserved.</p>
+    </footer>
+</body>
+</html>
