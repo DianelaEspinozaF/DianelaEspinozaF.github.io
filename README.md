@@ -35,5 +35,5 @@ I am motivated to continue learning and sharing experiences where I can flourish
 ## Contact
 
 - GitHub: [@DianelaEspinozaF](https://github.com/DianelaEspinozaF)
-- LinkedIn: [https://www.linkedin.com/in/dianelaespinoza/]
-- Email: [d.j.espinoza-fernandez@lse.ac.uk]
+- LinkedIn: [https://www.linkedin.com/in/dianelaespinoza/] (https://www.linkedin.com/in/dianelaespinoza/)
+- Email: [d.j.espinoza-fernandez@lse.ac.uk] (d.j.espinoza-fernandez@lse.ac.uk)
