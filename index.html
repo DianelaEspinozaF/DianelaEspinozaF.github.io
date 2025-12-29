@@ -26,6 +26,22 @@
             text-align: center;
         }
 
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
         header h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
@@ -36,6 +52,26 @@
             font-size: 1.2em;
             opacity: 0.85;
             color: #4a5568;
+        }
+
+        .cv-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background: white;
+            color: #d4a5a5;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            margin-top: 15px;
+            transition: all 0.3s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .cv-button:hover {
+            background: #2d3748;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .container {
@@ -119,6 +155,13 @@
             margin-top: 50px;
         }
 
+        .last-updated {
+            font-size: 0.9em;
+            color: #718096;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
         @media (max-width: 768px) {
             header h1 {
                 font-size: 2em;
@@ -127,23 +170,32 @@
             .skills {
                 grid-template-columns: 1fr;
             }
+
+            .profile-photo {
+                width: 120px;
+                height: 120px;
+            }
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Dianela Espinoza</h1>
-        <p>Master's Candidate in Data Science and Public Policy | LSE</p>
+        <div class="header-content">
+            <img src="photo_github.png" alt="Dianela Espinoza" class="profile-photo">
+            <div>
+                <h1>Dianela Espinoza</h1>
+                <p>Master's Candidate in Data Science and Public Policy | LSE</p>
+                <a href="CV_Dianela_Espinoza.pdf" class="cv-button" target="_blank">📄 Download CV</a>
+            </div>
+        </div>
     </header>
 
     <div class="container">
         <section id="about">
             <h2>About Me</h2>
             <p>Hi all! I am Dianela, from Chiclayo, Peru. I am a Master's candidate in Data Science and Public Policy at
-                the London School
-                of Economics (LSE). I am an economist from University of Piura.I have a strong interest in topics
-                related to education,
+                the London School of Economics (LSE). I have a strong interest in topics related to education,
                 early-childhood development, and impact evaluation.</p>
         </section>
 
@@ -153,11 +205,12 @@
             <div class="experience-item">
                 <h3>Research Assistant</h3>
                 <h4>GRADE - Young Lives Peru Team</h4>
-                <p>I worked with Santiago Cueto and Alan Sanchez on the international longitudinal study Young Lives,
-                    focusing on:</p>
+                <p>I worked with Santiago Cueto (Senior Researcher - Group for the Analysis of Development(GRADE)) and
+                    Alan Sanchez (Senior Quantitative Officer -Oxford University) on the international longitudinal
+                    study Young Lives, focusing on:</p>
                 <ul>
-                    <li>Conditional cash transfer interventions and their impact on educational outcomes</li>
-                    <li>Data cleaning processes with high standards</li>
+                    <li>Conditional cash transfer interventions and their impact on educational outcomes.</li>
+                    <li>Data cleaning processes with high standards.</li>
                 </ul>
             </div>
 
@@ -200,7 +253,8 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 Dianela Espinoza. All rights reserved.</p>
+        <p>&copy; 2025 Dianela Espinoza. All rights reserved.</p>
+        <p class="last-updated">Last updated: December 2025</p>
     </footer>
 </body>
 </html>
