@@ -3,10 +3,6 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&pause=1000&color=FFC8DD&center=true&vCenter=true&width=600&lines=Hi!+I'm+Dianela+Espinoza+%F0%9F%91%8B;Data+Science+%26+Public+Policy+%7C+LSE;Passionate+about+Education+%F0%9F%93%9A;Peruvian+Scholar+%F0%9F%87%B5%F0%9F%87%AA" alt="Typing SVG" />
 </h1>
 
-<p align="center">
-  <img src="photo_github.jpg" alt="Dianela" width="200" style="border-radius: 50%"/>
-</p>
-
 ## 👋 About Me
 
 I'm Dianela, from Chiclayo, Peru. I'm a Master's candidate in **Data Science and Public Policy** at the **London School of Economics (LSE)**.
