@@ -642,40 +642,32 @@
     </footer>
 
     <script>
-    // Abrir modal
     function openGallery() {
         document.getElementById('galleryModal').style.display = 'block';
-        document.body.style.overflow = 'hidden'; // Previene scroll del body
+        document.body.style.overflow = 'hidden'; 
     }
 
-    // Cerrar modal
     function closeGallery() {
         document.getElementById('galleryModal').style.display = 'none';
         document.body.style.overflow = 'auto';
     }
 
-    // Cambiar entre tabs
     function showTab(tabName) {
-        // Ocultar todos los contenidos
         const tabContents = document.querySelectorAll('.tab-content');
         tabContents.forEach(content => {
             content.classList.remove('active');
         });
-        
-        // Desactivar todos los botones
+
         const tabButtons = document.querySelectorAll('.tab-button');
         tabButtons.forEach(button => {
             button.classList.remove('active');
         });
-        
-        // Mostrar el contenido seleccionado
+
         document.getElementById(tabName).classList.add('active');
         
-        // Activar el botón correspondiente
         event.target.classList.add('active');
     }
 
-    // Cerrar al hacer click fuera del modal
     window.onclick = function(event) {
         const modal = document.getElementById('galleryModal');
         if (event.target == modal) {
@@ -683,7 +675,6 @@
         }
     }
 
-    // Cerrar con tecla ESC
     document.addEventListener('keydown', function(event) {
         if (event.key === 'Escape') {
             closeGallery();
