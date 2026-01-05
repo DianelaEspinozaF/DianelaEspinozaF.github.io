@@ -31,17 +31,17 @@
             max-width: 1100px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: 320px 1fr;
+            grid-template-columns: 300px 1fr;
             gap: 60px;
             align-items: start;
         }
 
-        /* Columna izquierda con nombre arriba */
+        /* Columna izquierda: solo nombre, foto, CV */
         .header-left-column {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 20px;
+            gap: 25px;
         }
 
         .header-left-column h1 {
@@ -67,32 +67,9 @@
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
-        /* Info debajo de la foto */
-        .header-info-below {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            gap: 12px;
-            width: 100%;
-        }
-
-        .subtitle {
-            font-size: 1em;
-            margin: 0;
-            opacity: 0.95;
-            line-height: 1.5;
-        }
-
-        .scholarship {
-            font-size: 0.95em;
-            margin: 0;
-            opacity: 0.9;
-        }
-
         .cv-button {
             display: inline-block;
-            padding: 12px 28px;
+            padding: 14px 32px;
             background: white;
             color: #1e3a5f;
             text-decoration: none;
@@ -100,8 +77,7 @@
             font-weight: 600;
             transition: all 0.3s;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin-top: 8px;
-            font-size: 1em;
+            font-size: 1.05em;
         }
 
         .cv-button:hover {
@@ -117,7 +93,7 @@
             flex-direction: column;
         }
 
-        /* About Me */
+        /* About Me con todos los links */
         .about-section {
             background: rgba(255, 255, 255, 0.08);
             padding: 30px;
@@ -149,11 +125,13 @@
             font-weight: 600;
             text-decoration: none;
             border-bottom: 2px solid rgba(255,255,255,0.5);
+            transition: border-bottom-color 0.3s;
         }
 
         .about-section a:hover {
             border-bottom-color: rgba(255,255,255,1);
         }
+
         .container {
             max-width: 900px;
             margin: 0 auto;
@@ -416,7 +394,7 @@
             background: #1e3a5f !important;
         }
 
-        /* Responsive */
+    /* Responsive */
     @media (max-width: 968px) {
         .header-layout {
             grid-template-columns: 1fr;
@@ -455,7 +433,7 @@
     <!-- HEADER DE DOS COLUMNAS -->
     <header>
         <div class="header-layout">
-            <!-- COLUMNA IZQUIERDA: Nombre, Foto, Info -->
+            <!-- COLUMNA IZQUIERDA: Nombre, Foto, CV -->
             <div class="header-left-column">
                 <!-- Nombre arriba -->
                 <h1>Dianela Espinoza</h1>
@@ -465,23 +443,19 @@
                     <img src="photo_github.png" alt="Dianela Espinoza" class="profile-photo">
                 </div>
                 
-                <!-- Info debajo de la foto -->
-                <div class="header-info-below">
-                    <p class="subtitle">Candidate for the <a href="https://www.lse.ac.uk/study-at-lse/Graduate/degree-programmes-2024/MPA-Data-Science-for-Public-Policy" target="_blank" style="color: white; font-weight: 600; text-decoration: none; border-bottom: 2px solid rgba(255,255,255,0.5);">MPA in Data Science for Public Policy</a> | LSE</p>
-                    <p class="scholarship">🏆 <a href="https://www.lse.ac.uk/school-of-public-policy/news/students/Peruscholarship" target="_blank" style="color: white; text-decoration: none; border-bottom: 2px solid rgba(255,255,255,0.5);">Peruvian Scholarship for Public Service</a></p>
-                    <a href="CV_Dianela_Espinoza.pdf" class="cv-button" target="_blank">📄 Download CV</a>
-                </div>
+                <!-- Solo botón CV debajo -->
+                <a href="CV_Dianela_Espinoza.pdf" class="cv-button" target="_blank">📄 Download CV</a>
             </div>
 
-            <!-- COLUMNA DERECHA: About Me -->
+            <!-- COLUMNA DERECHA: About Me CON TODOS LOS LINKS -->
             <div class="header-content-right">
                 <div class="about-section">
                     <h2>About Me</h2>
-                    <p>Hi! I'm Dianela, an economist from Chiclayo, Peru, currently pursuing a Master's in Data Science and Public Policy at the London School of Economics (LSE) as a Peruvian Government Scholar.</p>
+                    <p>Hi! I'm Dianela, an economist from Chiclayo, Peru, currently pursuing a <a href="https://www.lse.ac.uk/study-at-lse/Graduate/degree-programmes-2024/MPA-Data-Science-for-Public-Policy" target="_blank" style="color: white; font-weight: 600; text-decoration: none; border-bottom: 2px solid rgba(255,255,255,0.5);">Master's in Data Science and Public Policy</a> at the London School of Economics (LSE) as a <a href="https://www.lse.ac.uk/school-of-public-policy/news/students/Peruscholarship" target="_blank" style="color: white; font-weight: 600; text-decoration: none; border-bottom: 2px solid rgba(255,255,255,0.5);">Peruvian Government Scholar</a>.</p>
                     
                     <p>My research focuses on using rigorous quantitative methods to evaluate social programs and understand educational inequalities. I'm particularly interested in early childhood development, conditional cash transfers, and the role of data science in informing evidence-based policy in developing countries.</p>
                     
-                    <p>Before LSE, I worked as a Research Assistant at <a href="https://www.grade.org.pe/" target="_blank" style="color: white; font-weight: 600; text-decoration: none; border-bottom: 2px solid rgba(255,255,255,0.5);">GRADE</a> on the <a href="https://www.younglives.org.uk/" target="_blank" style="color: white; font-weight: 600; text-decoration: none; border-bottom: 2px solid rgba(255,255,255,0.5);">Young Lives</a> longitudinal study (Niños del Milenio in Peru), and as a Research Intern at <a href="https://poverty-action.org/" target="_blank" style="color: white; font-weight: 600; text-decoration: none; border-bottom: 2px solid rgba(255,255,255,0.5);">Innovations for Poverty Action</a>, where I contributed to projects on gender gaps in STEM and intercultural bilingual education.</p>
+                    <p>Before LSE, I worked as a Research Assistant at <a href="https://www.grade.org.pe/" target="_blank" style="color: white; font-weight: 600; text-decoration: none; border-bottom: 2px solid rgba(255,255,255,0.5);">GRADE</a> on the <a href="https://www.younglives.org.uk/" target="_blank" style="color: white; font-weight: 600; text-decoration: none; border-bottom: 2px solid rgba(255,255,255,0.5);">Young Lives</a> longitudinal study (<a href="https://www.ninosdelmilenio.org/" target="_blank" style="color: white; font-weight: 600; text-decoration: none; border-bottom: 2px solid rgba(255,255,255,0.5);">Niños del Milenio</a> in Peru), and as a Research Intern at <a href="https://poverty-action.org/" target="_blank" style="color: white; font-weight: 600; text-decoration: none; border-bottom: 2px solid rgba(255,255,255,0.5);">Innovations for Poverty Action</a>, where I contributed to projects on gender gaps in STEM and intercultural bilingual education.</p>
                 </div>
             </div>
         </div>
