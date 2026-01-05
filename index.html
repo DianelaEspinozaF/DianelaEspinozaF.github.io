@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!DOCTYPE html>
-<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Dianela Espinoza - Portfolio</title>
+            <style>
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dianela Espinoza - Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+                body {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    line-height: 1.6;
+                    color: #4a5568;
+                    background-color: #f7fafc;
+                }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #4a5568;
-            background-color: #f7fafc;
-        }
-
-        /* HEADER MEJORADO */
+                /* HEADER MEJORADO */
+        /* HEADER REORGANIZADO */
         header {
             background: linear-gradient(135deg, #1e3a5f 0%, #2d3748 100%);
             color: white;
@@ -33,9 +31,31 @@
             max-width: 1100px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: 300px 1fr;
+            grid-template-columns: 320px 1fr;
             gap: 60px;
-            align-items: center; 
+            align-items: start;
+        }
+
+        /* Columna izquierda con nombre arriba */
+        .header-left-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .header-left-column h1 {
+            font-size: 2.2em;
+            margin: 0;
+            color: white;
+            text-align: center;
+            width: 100%;
+        }
+
+        .header-photo {
+            width: 100%;
+            display: flex;
+            justify-content: center;
         }
 
         .profile-photo {
@@ -47,42 +67,32 @@
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
-        .header-content-right {
+        /* Info debajo de la foto */
+        .header-info-below {
             display: flex;
             flex-direction: column;
-            gap: 40px;
-        }
-
-        /* Info básica compacta */
-        .header-info {
-            display: flex;
-            flex-direction: column;
+            align-items: center;
+            text-align: center;
             gap: 12px;
-        }
-
-        header h1 {
-            font-size: 2.8em;
-            margin: 0;
-            color: white;
-            line-height: 1.2;
+            width: 100%;
         }
 
         .subtitle {
-            font-size: 1.15em;
+            font-size: 1em;
             margin: 0;
             opacity: 0.95;
             line-height: 1.5;
         }
 
         .scholarship {
-            font-size: 1em;
+            font-size: 0.95em;
             margin: 0;
             opacity: 0.9;
         }
 
         .cv-button {
             display: inline-block;
-            padding: 14px 32px;
+            padding: 12px 28px;
             background: white;
             color: #1e3a5f;
             text-decoration: none;
@@ -90,9 +100,8 @@
             font-weight: 600;
             transition: all 0.3s;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            align-self: flex-start;
             margin-top: 8px;
-            font-size: 1.05em;
+            font-size: 1em;
         }
 
         .cv-button:hover {
@@ -102,7 +111,13 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        /* About Me con mejor separación */
+        /* Columna derecha */
+        .header-content-right {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* About Me */
         .about-section {
             background: rgba(255, 255, 255, 0.08);
             padding: 30px;
@@ -129,6 +144,16 @@
             margin-bottom: 0;
         }
 
+        .about-section a {
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 2px solid rgba(255,255,255,0.5);
+        }
+
+        .about-section a:hover {
+            border-bottom-color: rgba(255,255,255,1);
+        }
         .container {
             max-width: 900px;
             margin: 0 auto;
@@ -392,60 +417,37 @@
         }
 
         /* Responsive */
-        @media (max-width: 968px) {
-            .header-layout {
-                grid-template-columns: 1fr;
-                gap: 40px;
-                max-width: 700px;
-            }
-            
-            .header-photo {
-                justify-self: center;
-                position: static;
-            }
-            
-            .profile-photo {
-                width: 280px;
-                height: 280px;
-            }
-            
-            header h1 {
-                font-size: 2.2em;
-            }
+    @media (max-width: 968px) {
+        .header-layout {
+            grid-template-columns: 1fr;
+            gap: 40px;
+            max-width: 700px;
         }
-
-        @media (max-width: 768px) {
-            .profile-photo {
-                width: 250px;
-                height: 250px;
-            }
-            
-            header h1 {
-                font-size: 2em;
-            }
-            
-            .about-section {
-                padding: 20px;
-            }
-
-            .modal-content {
-                width: 95%;
-                padding: 20px;
-                margin: 5% auto;
-            }
-            
-            .gallery-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .tabs {
-                flex-direction: column;
-            }
-            
-            .tab-button {
-                width: 100%;
-            }
+        
+        .header-left-column h1 {
+            font-size: 2em;
         }
+        
+        .profile-photo {
+            width: 280px;
+            height: 350px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .profile-photo {
+            width: 250px;
+            height: 320px;
+        }
+        
+        .header-left-column h1 {
+            font-size: 1.8em;
+        }
+        
+        .about-section {
+            padding: 20px;
+        }
+    }
     </style>
 </head>
 
@@ -453,22 +455,26 @@
     <!-- HEADER DE DOS COLUMNAS -->
     <header>
         <div class="header-layout">
-            <!-- FOTO CUADRADA A LA IZQUIERDA -->
-            <div class="header-photo">
-                <img src="photo_github.png" alt="Dianela Espinoza" class="profile-photo">
-            </div>
-
-            <!-- CONTENIDO ORGANIZADO A LA DERECHA -->
-            <div class="header-content-right">
-                <!-- Info básica -->
-                <div class="header-info">
-                    <h1>Dianela Espinoza</h1>
+            <!-- COLUMNA IZQUIERDA: Nombre, Foto, Info -->
+            <div class="header-left-column">
+                <!-- Nombre arriba -->
+                <h1>Dianela Espinoza</h1>
+                
+                <!-- Foto en el centro -->
+                <div class="header-photo">
+                    <img src="photo_github.png" alt="Dianela Espinoza" class="profile-photo">
+                </div>
+                
+                <!-- Info debajo de la foto -->
+                <div class="header-info-below">
                     <p class="subtitle">Candidate for the <a href="https://www.lse.ac.uk/study-at-lse/Graduate/degree-programmes-2024/MPA-Data-Science-for-Public-Policy" target="_blank" style="color: white; font-weight: 600; text-decoration: none; border-bottom: 2px solid rgba(255,255,255,0.5);">MPA in Data Science for Public Policy</a> | LSE</p>
                     <p class="scholarship">🏆 <a href="https://www.lse.ac.uk/school-of-public-policy/news/students/Peruscholarship" target="_blank" style="color: white; text-decoration: none; border-bottom: 2px solid rgba(255,255,255,0.5);">Peruvian Scholarship for Public Service</a></p>
                     <a href="CV_Dianela_Espinoza.pdf" class="cv-button" target="_blank">📄 Download CV</a>
                 </div>
-                
-                <!-- About Me separado -->
+            </div>
+
+            <!-- COLUMNA DERECHA: About Me -->
+            <div class="header-content-right">
                 <div class="about-section">
                     <h2>About Me</h2>
                     <p>Hi! I'm Dianela, an economist from Chiclayo, Peru, currently pursuing a Master's in Data Science and Public Policy at the London School of Economics (LSE) as a Peruvian Government Scholar.</p>
